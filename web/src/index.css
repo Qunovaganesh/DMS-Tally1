@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-text-primary;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+@layer components {
+  .mac-traffic-lights {
+    @apply flex items-center gap-2;
+  }
+  
+  .mac-traffic-light {
+    @apply w-3 h-3 rounded-full;
+  }
+  
+  .mac-traffic-light.red {
+    @apply bg-danger;
+  }
+  
+  .mac-traffic-light.yellow {
+    @apply bg-warning;
+  }
+  
+  .mac-traffic-light.green {
+    @apply bg-success;
+  }
+}
