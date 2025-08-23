@@ -11,6 +11,10 @@
     "outDir": "./dist",
     "rootDir": "./src"
   },
+  "ts-node": {
+    "esm": true,
+    "transpileOnly": true
+  },
   "include": ["src/**/*"],
   "exclude": ["node_modules", "dist"]
 }
